@@ -1,0 +1,817 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,700i|Oswald:400,500,600,700&display=swap');
+
+
+body,
+html {
+	font-family: 'Merriweather', serif;
+	font-size: 1rem;
+	line-height: 1.7;
+	color: #555;
+	font-weight: 300;
+	margin: 0 auto;
+	position: relative;
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiase;
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0;
+}
+
+li,
+p {
+	font-size: 1rem;
+	display: block;
+	line-height: 1.7;
+	margin-bottom: 0;
+}
+
+a {
+	color: #555;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #222;
+	font-weight: 600;
+	font-family: inherit;
+	line-height: 1.3;
+	font-family: 'Oswald',
+		sans-serif;
+}
+
+.spinner-ctn {
+	position: absolute;
+	top: 0;
+	background-color: #fff;
+	height: 100vh;
+	width: 100%;
+	z-index: 999999;
+	text-align: center;
+}
+
+.no-scroll {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.spinner {
+	width: 300px;
+	height: 40px;
+	text-align: center;
+	margin: 400px auto;
+}
+
+.spinner div {
+	height: 100%;
+	width: 6px;
+	background-color: #75a463;
+	display: inline-block;
+	animation: animeDiv 1.2s infinite ease-in-out;
+}
+
+@keyframes animeDiv {
+
+	0%,
+	100%,
+	40% {
+		transform: scaleY(.4);
+	}
+
+	20% {
+		transform: scaleY(1);
+	}
+}
+
+.spinner .rectagle2 {
+	animation-delay: -1.1s;
+}
+
+.spinner .rectagle3 {
+	animation-delay: -1s;
+}
+
+.spinner .rectagle4 {
+	animation-delay: -.9s;
+}
+
+.spinner .rectagle5 {
+	animation-delay: -.8s;
+}
+
+.navbar {
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+.navbar-toggler:focus {
+	outline: 0 !important;
+	box-shadow: none !important;
+}
+
+.navbar-brand {
+	width: 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	letter-spacing: 1px;
+	line-height: 1.3;
+	font-family: 'Oswald',
+		sans-serif;
+	text-transform: capitalize;
+	text-transform: uppercase;
+	transition: all .3s ease 0s;
+	display: block;
+	padding-right: 0;
+	font-weight: 600;
+	font-size: 1rem;
+	margin-left: 20px;
+	color: #222;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+	color: #75a463;
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #75a463;
+}
+
+.navbar-toggler span {
+	color: #000;
+	font-size: 25px;
+	border: none;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.navbar-light .navbar-toggler {
+	color: #75a463;
+	border-color: none;
+}
+
+.navbar-toggler {
+	padding: .25rem .75rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: none;
+	border-radius: .25rem;
+}
+
+.navbar.compressed {
+	padding: 5px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-transition: all .38s ease;
+	-moz-transition: all .38s ease;
+	-ms-transition: all .38s ease;
+	transition: all .38s ease;
+	background: #fff;
+	border-bottom: 1px solid #d4e3ce;
+}
+
+#hero {
+	background: url('../img/reo_hero.jpg');
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 800px;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+}
+
+.hero_caption {
+	max-width: 80%;
+}
+
+.teak_title {
+	font-weight: 300;
+	font-size: 2.5rem;
+}
+
+.hero_p {
+	max-width: 80%;
+	font-weight: 300;
+	font-size: 1.2rem;
+	font-family: 'Merriweather',
+		serif;
+}
+
+.hero_caption,
+.teak_title,
+.hero_title,
+.hero_p,
+.btn_hero {
+	color: #fff !important;
+}
+
+.teak_title {
+	font-size: 2, 5rem;
+}
+
+.hero_title {
+	font-size: 3rem;
+	letter-spacing: 1px;
+}
+
+.btn_hero {
+	background-color: #75a463;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	margin-top: 20px;
+	font-family: 'Oswald',
+		sans-serif;
+	letter-spacing: 2px;
+}
+
+.btn_hero:hover {
+	background-color: rgba(117, 164, 99, 0.7);
+}
+
+/*===== QUEM SOMOS =====*/
+.quem_somos {
+	background: #f1f6ef;
+}
+
+.section_space {
+	padding: 50px 0;
+}
+
+.title_h2 {
+	text-transform: capitalize;
+	position: relative;
+	text-align: center;
+}
+
+.quem_somos_content {
+	margin-top: 30px;
+}
+
+.title_h3 {
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+.title_small_top {
+	color: #75a463;
+	font-family: 'Oswald',
+		sans-serif;
+	letter-spacing: 2px;
+	font-weight: 400;
+	display: block;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+}
+
+.quem_somos_p {
+	padding-right: 30px;
+	text-align: justify;
+}
+
+.image_right {
+	float: right;
+	border: 4px solid #75a463;
+}
+
+/*======pilares=======*/
+
+.pilares_reobote .media i {
+	color: #fff;
+	border: 3px solid #75a463;
+	background-color: rgba(117, 164, 99, 0.7);
+	padding: 15px;
+	margin-right: 20px;
+	font-size: 2rem;
+}
+
+.pilares_reobote .media h5 {
+	font-weight: 700;
+}
+
+/*============why=============*/
+
+.why_choose_us {
+	background: linear-gradient(rgba(26, 26, 26, .8), rgba(26, 26, 26, .7)), url('../img/why_background.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 650px;
+	color: #fff;
+	z-index: 1;
+}
+
+.why_content {
+	padding: 20px;
+	background-color: rgba(117, 164, 99, 0.3);
+	margin-top: 20px;
+	border: 2px solid #75a463;
+}
+
+.why_choose_us .title_h2 {
+	color: #fff;
+	margin-top: 20px;
+}
+
+/*======== limited offer =======*/
+.time_offer {
+	background: #f1f6ef;
+}
+
+.text_offer_h2 {
+	font-family: 'Merriweather', serif !important;
+	color: #75a463;
+	margin: 20px 0;
+	font-weight: 300;
+}
+
+/*==========classes==========*/
+
+.nossas_aulas {
+	background: linear-gradient(rgba(26, 26, 26, .8), rgba(26, 26, 26, .9)), url('../img/formacao_hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 600px;
+	color: #fff;
+	z-index: 1;
+}
+
+.nossas_aulas p {
+	text-align: center;
+	padding: 0 20px;
+	color: #fff;
+}
+
+.nossas_aulas .title_h2 {
+	color: #fff;
+}
+
+.classes {
+	margin-top: 20px;
+}
+
+.classes h4 {
+	text-align: center;
+}
+
+.box_one {
+	border: 2px solid #75a463;
+	padding: 30px 10px;
+	height: 420px;
+	color: #555;
+}
+
+.box_two {
+	border: 2px solid #75a463;
+	padding: 30px 10px;
+	height: 420px;
+	background-color: #75a463;
+	color: #fff;
+}
+
+.box_one:hover {
+	background: #75a463;
+	color: #fff;
+}
+
+.box_two:hover {
+	color: #555;
+	background-color: transparent;
+}
+
+.box_one .inner_class,
+.box_two .inner_class {
+	background-color: rgba(117, 164, 99, 0.3);
+	padding: 20px;
+	height: 150px;
+}
+
+.inner_class h4 {
+	color: #fff !important;
+	font-weight: 400;
+}
+
+.outer_class {
+	margin-top: 25px;
+}
+
+/*=======what to expect=========*/
+.what_to_expect {
+	background: #f1f6ef;
+}
+
+.expect_content {
+	margin-top: 30px;
+}
+
+ul.list_unstyled {
+	padding-left: 0;
+}
+
+.what_to_expect i {
+	color: #75a463;
+}
+
+/*=====footer======*/
+
+.footer {
+	background-color: #0b1009;
+	color: #fff;
+}
+
+.footer .title_h2 {
+	color: #fff;
+}
+
+.location_color {
+	color: #75a463;
+	font-weight: 400;
+	font-size: 1.3rem;
+}
+
+.contact {
+	margin-top: 30px;
+}
+
+.contact a {
+	color: #fff;
+}
+
+.sb_mozmedia {
+	margin-top: 30px;
+}
+
+.sb_mozmedia a {
+	color: #75a463;
+}
+
+/*======MEDIA QUIRES=======*/
+
+@media (min-width: 320px) and (max-width: 750px) {
+
+	.navbar-brand {
+		width: 180px;
+		padding-left: 20px;
+	}
+
+	.teak_title {
+		font-size: 1.5rem;
+	}
+
+	.hero_title {
+		font-size: 1.5rem;
+	}
+
+	.hero_p {
+		font-size: 1rem;
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	#hero {
+		background: url('../img/reo_hero.jpg');
+		background-color: #000;
+		background-repeat: no-repeat;
+		background-position: center center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-attachment: fixed;
+		position: relative;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		height: 600px;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+	}
+
+	.hero_caption {
+		max-width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.section_space {
+		padding: 20px 0;
+	}
+
+	.quem_somos {
+		text-align: center;
+	}
+
+	.quem_somos_p {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.quem_somos_content {
+		margin-top: 10px;
+	}
+
+	.btn_hero {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.pilares_reobote .media {
+		padding: 0 20px;
+	}
+
+	.pilares_reobote p {
+		text-align: justify;
+	}
+
+	.mobile_view {
+		margin: 20px 0;
+	}
+
+	.why_choose_us {
+		height: auto;
+	}
+
+	.nossas_aulas {
+		height: auto;
+	}
+
+	.box_one {
+		height: auto;
+	}
+
+	.box_two {
+		border: 2px solid #75a463;
+		padding: 30px 10px;
+		height: auto;
+		background-color: #75a463;
+		color: #fff;
+	}
+
+	.box_one .inner_class,
+	.box_two .inner_class {
+		height: auto;
+	}
+
+	.what_to_expect {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.footer {
+		padding: 0 20px;
+	}
+
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+	.navbar-brand {
+		width: 180px;
+		padding-left: 20px;
+	}
+
+	.teak_title {
+		font-size: 1.5rem;
+	}
+
+	.hero_title {
+		font-size: 1.5rem;
+	}
+
+	.hero_p {
+		font-size: 1rem;
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	#hero {
+
+		height: 600px;
+	}
+
+	.hero_caption {
+		max-width: 100%;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.section_space {
+		padding: 20px 0;
+	}
+
+	.quem_somos {
+		text-align: center;
+	}
+
+	.quem_somos_p {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.quem_somos_content {
+		margin-top: 10px;
+	}
+
+	.image_right {
+		float: none;
+	}
+
+	.quem_somos_content img {
+		width: 100%;
+	}
+
+	.btn_hero {
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	.pilares_reobote .media {
+		padding: 0 20px;
+	}
+
+	.pilares_reobote p {
+		text-align: justify;
+	}
+
+	.mobile_view {
+		margin: 20px 0;
+	}
+
+	.why_choose_us {
+		height: auto;
+	}
+
+	.nossas_aulas {
+		height: auto;
+	}
+
+	.box_one {
+		height: auto;
+	}
+
+	.box_two {
+		border: 2px solid #75a463;
+		padding: 30px 10px;
+		height: auto;
+		background-color: #75a463;
+		color: #fff;
+	}
+
+	.box_one .inner_class,
+	.box_two .inner_class {
+		height: auto;
+	}
+
+	.what_to_expect {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.footer {
+		padding: 0 20px;
+	}
+}
+
+/*=========================== ABOUT US =============================*/
+
+.hero_pages {
+	background: linear-gradient(rgba(26, 26, 26, .8), rgba(26, 26, 26, .9)), url('../img/formacao_hero.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 280px;
+	color: #fff;
+	z-index: 1;
+}
+
+.all_pages_caption {
+	margin-top: 13%;
+}
+
+.other_top_title {
+	font-style: italic;
+	color: #75a463;
+	text-transform: capitalize;
+}
+
+.pages_title_h2 {
+	color: #fff;
+	text-transform: uppercase
+}
+
+.sobre_content {
+	background-color: #f1f6ef;
+}
+
+.sobre_text_content p {
+	text-align: justify;
+}
+
+.quem_somos_text {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+}
+
+.quem_somos_text p {
+	font-style: italic;
+	color: #75a463;
+}
+
+.missao_valores_content h5 {
+	color: #75a463;
+}
+
+.mao_ajuda {
+	color: #75a463;
+	display: block;
+}
+
+/*=====nossos mestres======*/
+.nossos_mestres {
+	padding-bottom: 30px;
+}
+
+.categoria {
+	color: #75a463;
+	margin-top: -9px;
+	display: block;
+}
+
+.box_int {
+	margin-top: 20px;
+}
+
+.box_int img {
+	width: 300px;
+	border: 5px solid #75a463;
+}
+
+.box_int h3 {
+	margin-top: 20px;
+}
+
+/*=========MEDIA QUIRES - SOBRE NOS TAB==============*/
+@media (min-width: 320px) and (max-width: 750px) {
+	.hero_pages {
+		height: 200px;
+
+	}
+
+	.all_pages_caption {
+		margin-top: 34%;
+	}
+
+	.sobre_content {
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.missao_valores_content {
+		padding: 0 20px;
+	}
+
+	.mobile_view_mission_valores {
+		margin: 25px 0;
+	}
+
+}
